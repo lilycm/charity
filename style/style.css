@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/*--------------- header section start ----------------*/
 #header{
     background: url(../images/bg1.jpg);
     background-position: center;
@@ -13,15 +15,18 @@ body{
     background: rgba(187, 184, 184, 0.418);
 }
 #header .navbar .logo{
-    color: rgb(0, 89, 124);
+    color: rgb(10, 90, 143);
     font-size: 30px;
     font-weight: bold;
-    
+    transition: .7s ease-in-out;
 }
 #header .navbar .logo span{
     color: white;
     font-size: 30px;
     font-weight: bold;
+}
+#header .navbar .logo:hover{
+    transform: rotateY(360deg);
 }
 #header .navbar .nav-item{
     margin: 0 20px;
@@ -36,3 +41,61 @@ body{
     background-color: rgba(250, 235, 215, 0.452);
     border-radius: 5px;
 }
+#header .header-text{
+    display: flex;
+    justify-content: start;
+}
+#header .header-text .header-title{
+    text-align: justify;
+    padding-top: 100px;
+    padding-left: 50px;
+    color: white;
+}
+#header .header-text .header-title h1{
+    font-family: 'Poppins', sans-serif;
+}
+#header .header-text .header-title p{
+    width: 50%;   
+    padding-top: 30px;
+    font-family: 'Roboto Slab', serif; 
+}
+
+#header .header-text .header-title .header-links{
+    display: flex;
+}
+
+
+
+#header .header-text .header-title .header-link, .member-link{
+    width: 250px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: 2px solid white;
+    text-align: center;
+    transition: .5s ease-in;
+    margin-right: 20px;
+}
+#header .header-text .header-title .header-link a, .member-link a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+#header .header-text .header-title .header-link:hover{
+    background-color: rgba(3, 112, 184, 0.685);
+    border: 2px solid rgba(3, 112, 184, 0.685);
+}
+
+#header .header-text .header-title .member-link:hover{
+    background-color: rgba(3, 112, 184, 0.685);
+    border: 2px solid rgba(3, 112, 184, 0.685);
+}
+
+/*--------------- header section end  ------------------*/
+
+
+/*--------------- about section start -------------------*/
+#about{
+    margin-top: 120px;
+}
+/*--------------- about section end -------------------*/
