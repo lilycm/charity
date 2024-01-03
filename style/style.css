@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background: url(../images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+}
