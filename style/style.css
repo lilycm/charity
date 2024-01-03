@@ -9,3 +9,30 @@ body{
     background-size: cover;
     min-height: 90vh;
 }
+#header .navbar{
+    background: rgba(187, 184, 184, 0.418);
+}
+#header .navbar .logo{
+    color: rgb(0, 89, 124);
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+#header .navbar .logo span{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+#header .navbar .nav-item{
+    margin: 0 20px;
+}
+#header .navbar .nav-item .nav-link{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .7s ease-in-out;
+}
+#header .navbar .nav-item:hover .nav-link{
+    background-color: rgba(250, 235, 215, 0.452);
+    border-radius: 5px;
+}
