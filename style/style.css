@@ -98,4 +98,55 @@ body{
 #about{
     margin-top: 120px;
 }
+
+
+#about .about-detail .about-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#about .about-detail .about-title{
+    background-color:rgba(80, 76, 76, 0.719);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#about .about-detail .about-title .about-links{
+    display: flex;
+}
+
+#about .about-detail .about-title .about-info{
+    margin-top: 50px;
+    overflow-Y: scroll;
+    height: 250px;
+    color: black;
+}
+
+
+#about .about-detail .about-title .about-info span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#about .about-detail .about-title .about-links .about-link, .about-link2{
+    width: 250px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: 2px solid white;
+    text-align: center;
+    transition: .5s linear;
+    margin-right: 20px;
+}
+
+#about .about-detail .about-title .about-links .about-link a, .about-link2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+#about .about-detail .about-title .about-links .about-link:hover{
+    background-color: rgba(3, 112, 184, 0.685);
+    border: 2px solid rgba(3, 112, 184, 0.685);
+    transform: scale(1.1);
+}
 /*--------------- about section end -------------------*/
