@@ -329,6 +329,22 @@ body{
 /*---------- statics section end --------------*/
 
 
+/*-------------- gallery section start ------------*/
+#gallery{
+    margin-top: 120px;
+}
+
+
+
+#gallery .gallery-images .first-gallery .gallery-img img{
+    width: 100%;
+}
+
+#gallery .gallery-images .second-gallery .gallery-img img{
+    width: 100%;
+}
+/*-------------- gallery section end --------------*/
+
 
 
 /*-------- Volunteer Section start ---------*/
