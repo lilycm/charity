@@ -380,7 +380,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 100vh;
     background-attachment: fixed;
 }
 
@@ -395,11 +395,14 @@ body{
 #volunteer .member-form{
     width: 75%;
     margin:auto;
+    padding-bottom: 60px;
+
 }
 #volunteer .member-form form{
     background: rgba(0, 0, 0, 0.329);
     padding: 40px 50px;
     border-radius: 7px;
+    
 }
 
 #volunteer .member-info label{
@@ -463,13 +466,39 @@ body{
     min-height: 70vh;
     background-attachment: fixed;
 }
-#donate::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.37);
+#donate  .donate-poor{
+    background: rgba(0, 0, 0, 0.767);
     width: 100%;
-    height: 100%;
+    height: 70vh;
+}
+
+#donate  .donate-poor .donate-detail{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#donate  .donate-poor .donate-title{
+    color: aliceblue;
+}
+#donate  .donate-poor .donate-detail .donate-title .fa-heart{
+    color: red;
+}
+
+#donate  .donate-poor .donate-detail .donate-amount .number{
+    padding: 20px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: aliceblue;
+}
+#donate  .donate-poor .donate-detail .donate-amount .submit{
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
 }
 /*----------donate section end  -----------------*/
