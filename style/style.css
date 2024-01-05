@@ -208,20 +208,148 @@ body{
 
 }
 
+#cause h1, p{
+    text-align: center;
+}
+
+
 #cause .causes{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;
     margin-top: 40px;
 }
 #cause .causes .cause-detail img{
     width: 100%;
+    transition: all .5s ease;
+}
+#cause .causes .cause-detail .cause-img{
     overflow: hidden;
-    transition: all .5s linear;
-    height: 100%;
 }
 
-#cause .causes .cause-detail:hover img{
-    transform: scale(1.3);
+#cause .causes .cause-detail{
+    box-shadow: -10px 10px 30px grey;
+    background: rgba(252, 175, 188, 0.315);
+}
+#cause .causes .cause-detail .cause-img img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#cause .causes .cause-detail h4{
+    padding: 30px 20px;
+}
+
+#cause .causes .cause-detail p{
+    padding:0 20px;
+    text-align: justify;
+}
+
+#cause .causes .cause-detail .cause-link{
+    padding:10px 15px;
+    border: 2px solid palevioletred;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    transition: .5s linear;
+    margin-bottom: 20px;
+}
+
+#cause .causes .cause-detail .cause-link a{
+    text-decoration: none;
+    color: palevioletred;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#cause .causes .cause-detail .cause-link:hover{
+    background: palevioletred;
+    border: 2px solid palevioletred;
+    transform: scale(1.1);
+}
+#cause .causes .cause-detail .cause-link:hover a{
+    color: aliceblue;
 }
 /*--------------cause section end  -----------*/
+
+
+
+/*-------- Volunteer Section start ---------*/
+
+#volunteer{
+    margin-top: 120px;
+    background: url(../images/join-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+#volunteer .form-title{
+    text-align: center;
+    padding-top: 20px;
+}
+#volunteer h2{
+    padding-top: 20px;
+}
+
+#volunteer .member-form{
+    width: 75%;
+    margin:auto;
+}
+#volunteer .member-form form{
+    background: rgba(0, 0, 0, 0.329);
+    padding: 40px 50px;
+    border-radius: 7px;
+}
+
+#volunteer .member-info label{
+    color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+#volunteer .member-info input, select{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background: rgba(0, 0, 0, 0.438);
+}
+
+#volunteer .member-info input::placeholder{
+    color: aliceblue;
+}
+
+#volunteer .member-info select{
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background: rgba(0, 0, 0, 0.438);
+}
+
+
+#volunteer .member-info .select-option{
+    color: aliceblue;
+}
+
+#volunteer .sub-btn{
+    margin-top: 30px;
+}
+
+#volunteer .sub-btn input{
+    padding: 10px 15px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .5s ease-in;
+}
+
+#volunteer .sub-btn input:hover{
+    background-color: palevioletred;
+    border: 2px solid palevioletred;
+}
+/*-------- Volunteer section end --------*/
