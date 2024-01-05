@@ -98,13 +98,20 @@ body{
 #about{
     margin-top: 120px;
 }
-
-
 #about .about-detail .about-img img{
     width: 100%;
     border-radius: 20px;
+    transition: 1s ease;
+}
+#about .about-detail .about-img{
+    overflow: hidden;
+    width: 100%;
+    
 }
 
+#about .about-detail .about-img:hover img{
+    transform: scale(1.2);
+}
 #about .about-detail .about-title{
     background-color:rgb(247, 152, 168);
     border-radius: 20px;
@@ -278,10 +285,46 @@ body{
 #statics{
     margin-top: 120px;
 }
+#statics .statics-bg{
+    background: url(../images/neglected-child.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    border-radius: 30px;
+}
 
 #statics .statics-info{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-top: 50px;
+}
+
+#statics .statics-info .statics-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.507);
+    padding: 20px 10px;
+    border-radius: 10px;
+    transition: .6s ease-out;
+}
+#statics .statics-info .statics-detail:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.171);
+    transform: scale(.9);
+}
+
+#statics .statics-info .statics-detail .statics-number{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+#statics .statics-info .statics-detail .statics-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 /*---------- statics section end --------------*/
 
