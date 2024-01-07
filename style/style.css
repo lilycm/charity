@@ -581,7 +581,7 @@ body{
 /* media query start for phone */
 @media screen and (max-width: 767px) {
     #header .header-text .header-title{
-        padding-top: 100px;
+        padding: 100px 0px 0px 0px;
         color: white;
     }
     #header .header-text .header-title h1{
@@ -589,11 +589,11 @@ body{
         text-align: center;
     }
     #header .header-text .header-title p{
-        width: 50%;
-        margin: auto;  
+        text-align: center; 
         padding-top: 30px;
         font-family: 'Roboto Slab', serif;
-        text-align: center; 
+        width: 90%;
+        margin: auto;
     }
     
     #header .header-text .header-title .header-links{
@@ -603,12 +603,28 @@ body{
         padding-bottom: 30px;
     }
 
+    #about .about-detail .about-img{
+        margin-bottom: 20px;
+    }
+
+    #about .about-detail .about-title .about-info{
+        padding-left: 0px;
+    }
+
+
+
     #about .about-detail .about-title .about-links{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 30px;
+        margin-left: 0px;
     }
+
+    #about .about-detail .about-title .about-links .about-link, .about-link2{
+        margin-right: 0px;
+    }
+
 
     #work .works{
         display: grid;
