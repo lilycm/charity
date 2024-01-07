@@ -120,6 +120,13 @@ body{
     margin-left: 30px;
 }
 
+
+#about .about-detail .about-title .about-info p{
+    text-align: justify;
+    padding-right: 20px;
+}
+
+
 #about .about-detail .about-title .about-info{
     margin-top: 50px;
     overflow-Y: scroll;
